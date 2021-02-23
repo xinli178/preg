@@ -1,0 +1,112 @@
+{
+	"pages":[
+		{
+			"path": "pages/tabBar/record/record",
+			"style": {
+				"navigationBarTitleText": "孕产妇健康管理",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							//"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				},
+				"navigationBarBackgroundColor":"#F8E0F7",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/tabBar/hygiene/hygiene",
+			"style": {
+				"navigationBarTitleText": "孕产妇健康管理",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							//"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				},
+				"navigationBarBackgroundColor":"#F8E0F7",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/tabBar/my/my",
+			"style": {
+				"navigationBarTitleText": "孕产妇健康管理",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							//"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				},
+				"navigationBarBackgroundColor":"#F8E0F7",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/tabBar/forum/forum",
+			"style": {
+				"navigationBarTitleText": "孕产妇健康管理",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							//"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				},
+				"navigationBarBackgroundColor":"#F8E0F7",
+				"navigationBarTextStyle":"black"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#000000",
+		"borderStyle": "black",
+		"backgroundColor": "#F8E0F7",
+		"list": [{
+				"pagePath": "pages/tabBar/record/record",
+				"iconPath": "static/record-noselect.png",
+				"selectedIconPath": "static/record-selected.png",
+				"text": "记录"
+			},
+			{
+				"pagePath": "pages/tabBar/hygiene/hygiene",
+				"iconPath": "static/hygiene-noselect.png",
+				"selectedIconPath": "static/hygiene-selected.png",
+				"text": "保健"
+			}, {
+				"pagePath": "pages/tabBar/forum/forum",
+				"iconPath": "static/forum-noselect.png",
+				"selectedIconPath": "static/forum-selected.png",
+				"text": "论坛"
+			}, {
+				"pagePath": "pages/tabBar/my/my",
+				"iconPath": "static/my-noselect.png",
+				"selectedIconPath": "static/my-selected.png",
+				"text": "我的"
+			}
+		]
+	}
+}
