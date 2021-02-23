@@ -1,0 +1,97 @@
+<template>
+    <view class="uni-margin-wrap">
+    	<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
+    		<swiper-item v-for="(item ,index) in info" :key="index">
+    			<!-- <view class="swiper-item uni-bg-swiper1">
+					<image src="../../../static/preg-pre.jpg" class="swiperpic1"></image>
+				</view>
+    		</swiper-item>
+    		<swiper-item>
+    			<view class="swiper-item uni-bg-swiper2">
+					<image src="../../../static/preg-no.jpg" class="swiperpic2"></image>
+				</view>
+    		</swiper-item>
+    		<swiper-item>
+    			<view class="swiper-item uni-bg-swiper3">
+					<image src="../../../static/preg-know.jpg" class="swiperpic3"></image>
+				</view> -->
+				<view class="swiper-item">
+					{{item.content}}
+				</view>
+    		</swiper-item>
+    	</swiper>
+    </view>
+</template>
+<script>
+    export default {
+    	data() {
+    		return {
+    			background: ['color1', 'color2', 'color3'],
+    			indicatorDots: true,
+    			autoplay: true,
+    			interval: 2000,
+    			duration: 500,
+				info:[
+					{
+					content:../../../static/preg-pre.jpg},
+					// {content:../../../static/preg-no.jpg},
+					// {content:../../../static/preg-know.jpg
+				}]
+    		}
+    	},
+    	methods: {
+    		changeIndicatorDots(e) {
+    			this.indicatorDots = !this.indicatorDots
+    		},
+    		changeAutoplay(e) {
+    			this.autoplay = !this.autoplay
+    		},
+    		intervalChange(e) {
+    			this.interval = e.detail.value
+    		},
+    		durationChange(e) {
+    			this.duration = e.detail.value
+    		}
+    	}
+    }
+</script>
+
+<style>
+	.uni-margin-wrap {
+		width:690rpx;
+		width: 100%;;
+	}
+	.swiper {
+		height: 300rpx;
+	}
+	.swiper-item {
+		display: block;
+		height: 300rpx;
+		line-height: 300rpx;
+		text-align: center;
+	}
+	
+	.swiper-list {
+		margin-top: 40rpx;
+		margin-bottom: 0;
+	}
+	
+	.uni-common-mt{
+		margin-top:60rpx;
+		position:relative;
+	}
+	
+	.info {
+		position: absolute;
+		right:20rpx;
+	}
+	
+	.uni-padding-wrap {
+	    width:550rpx;
+	    padding:0 100rpx;
+	}
+	.swiperpic1,.swiperpic2,.swiperpic3{
+		height: 300rpx;
+		width: 100%;
+	}
+</style>
